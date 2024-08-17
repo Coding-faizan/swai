@@ -8,13 +8,30 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "#7BFB75", // Greenish color
+        "primary-40": "#7BFB7566", // Lighter green
+        accent: "#E7E7E7", // Light gray
+        "main-font": "#121212", // Black (for buttons)
+        "secondary-font": "#6B6B6B", // Dark gray (for secondary font)
+      },
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"], // Montserrat font family
+      },
+      fontSize: {
+        "semibold-40": ["40px", { lineHeight: "1.2" }],
+        "semibold-20": ["20px", { lineHeight: "1.2" }],
+        "semibold-16": ["16px", { lineHeight: "1.2" }],
+        "medium-16": ["16px", { lineHeight: "1.5" }],
+        "regular-16": ["16px", { lineHeight: "1.5" }],
+        "semibold-14": ["14px", { lineHeight: "1.2" }],
+        "regular-14": ["14px", { lineHeight: "1.5" }],
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light"],
+  },
 };
 export default config;
