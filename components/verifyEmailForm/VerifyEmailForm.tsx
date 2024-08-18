@@ -1,21 +1,16 @@
 "use client";
 
 import React from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { signUpSchema, TSignUpSchema } from "@/lib/type";
 import { Header } from "../signupForm/Header";
-import { Form } from "../signupForm/Form";
 import { FormField } from "../signupForm/FormField";
 import Container from "../shared/Container";
-import { Button } from "@/UI/Button";
 import Link from "next/link";
 
 const VerifyEmailForm: React.FC = () => {
   // Initialize form with React Hook Form and Zod validation
 
-  const onSubmit = (data: TSignUpSchema) => {
-    console.log(data);
+  const onSubmit = () => {
+    console.log();
   };
 
   return (
@@ -25,7 +20,7 @@ const VerifyEmailForm: React.FC = () => {
         <p className="text-medium-20 text-main-font my-3">
           We sent an email to abc@gmail.com
         </p>
-        <form action="/" className="w-full max-w-md">
+        <form action="/">
           <FormField
             id="6-digit-code"
             type="number"

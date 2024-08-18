@@ -2,7 +2,7 @@ import { TSignUpSchema } from "@/lib/type";
 import { UseFormRegister } from "react-hook-form";
 
 type FormFieldProps = {
-  id: string;
+  id?: string;
   label?: string;
   type: string;
   placeholder?: string;

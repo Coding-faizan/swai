@@ -5,7 +5,7 @@ type Props = {
 };
 const Container = ({ children }: Props) => {
   return (
-    <div className="flex items-center justify-center min-h-screen px-4 py-6">
+    <div className="flex items-center justify-center px-4 py-6 min-h-[calc(100vh-64px)]">
       <div className="flex flex-col items-start w-full max-w-md">
         {children}
       </div>
