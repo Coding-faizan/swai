@@ -29,7 +29,7 @@ const NichesSelection = () => {
       <Select
         onChange={handleSelectChange}
         label="Select from the list"
-        className="w-full  mb-3 bg-white"
+        className="w-full  mb-3"
       >
         {options.map((option) => (
           <SelectItem key={option}>{option}</SelectItem>

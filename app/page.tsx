@@ -7,12 +7,13 @@ import GenderSelection from "@/components/GenderSelection";
 import CollaborationSelection from "@/components/CollaborationsSelection";
 import DateOfBirthForm from "@/components/DateOfBirthForm";
 import NichesSelection from "@/components/NichesSelection";
+import LanguagesSelection from "@/components/LanguagesSelection";
 
 const HomePage = () => {
   return (
     <div>
       <Navbar />
-      <NichesSelection />
+      <LanguagesSelection />
     </div>
   );
 };
