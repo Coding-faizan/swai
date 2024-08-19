@@ -1,7 +1,7 @@
 import Container from "../shared/Container";
 import React from "react";
-import { Header } from "../signupForm/Header";
-import { FormField } from "../signupForm/FormField";
+import { Header } from "../../app/signup/signupForm/Header";
+import { FormField } from "../../app/signup/signupForm/FormField";
 import Button from "../shared/Button";
 import Link from "next/link";
 import LocationInput from "./LocationInput";

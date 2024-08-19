@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Header } from "./signupForm/Header";
+import { Header } from "../app/signup/signupForm/Header";
 import Button from "./shared/Button";
 import Container from "./shared/Container";
 

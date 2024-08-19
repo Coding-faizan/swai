@@ -6,7 +6,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Header } from "./signupForm/Header";
+import { Header } from "../app/signup/signupForm/Header";
 import Container from "./shared/Container";
 import Button from "./shared/Button";
 
